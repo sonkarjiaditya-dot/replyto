@@ -15,10 +15,22 @@ export default function ReplyCard({ reply, accent = 'personal' }) {
     <div className="reply-card">
       <span className={`reply-tag ${accent}`}>{reply.tone}</span>
 
-      {reply.incomingMessage ? (
+      {reply.yourMessage ? (
+        <>
+          <div className="reply-block">
+            <span className="reply-label">You say:</span>
+            <p className="reply-quote">“{reply.yourMessage}”</p>
+          </div>
+
+          <div className="reply-block">
+            <span className="reply-label">They say:</span>
+            <p className="reply-quote">“{reply.theirResponse}”</p>
+          </div>
+        </>
+      ) : reply.incomingMessage ? (
         <div className="reply-block">
           <span className="reply-label">Situation:</span>
-          <p className="reply-quote">"They said: {reply.incomingMessage}"</p>
+          <p className="reply-quote">They said: “{reply.incomingMessage}”</p>
         </div>
       ) : (
         reply.situation && (
@@ -30,11 +42,17 @@ export default function ReplyCard({ reply, accent = 'personal' }) {
       )}
 
       <div className="reply-block">
-        <span className="reply-label">Reply:</span>
+        <span className="reply-label">
+          {reply.yourMessage ? 'Clever reply:' : 'Reply:'}
+        </span>
         <p className="reply-text">{reply.reply}</p>
       </div>
 
-      <button className={`copy-btn${copied ? ' copied' : ''}`} aria-label="Copy reply" onClick={handleCopy}>
+      <button
+        className={`copy-btn${copied ? ' copied' : ''}`}
+        aria-label="Copy reply"
+        onClick={handleCopy}
+      >
         <Icon name="copy" />
         <span className="copy-label">{copied ? 'Copied' : 'Copy'}</span>
       </button>

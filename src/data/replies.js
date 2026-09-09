@@ -91,7 +91,759 @@ const RAW = [
   { category: 'Coworker', subcategory: 'Meetings', situation: 'Rescheduling a meeting', incomingMessage: 'Can we move our sync?', reply: "Works for me — does later this afternoon work, or would tomorrow morning be better?", tone: 'Flexible', tags: ['meeting'], popularity: 60 },
   { category: 'Coworker', subcategory: 'Collaboration', situation: 'Proposing to team up', incomingMessage: '', reply: "I think our parts overlap a bit — want to sync up so we're not duplicating work?", tone: 'Collaborative', tags: ['collaboration'], popularity: 66 },
   { category: 'Coworker', subcategory: 'Apology', situation: 'Apologizing to a teammate', incomingMessage: '', reply: "Sorry about the mix-up earlier — that was on me, and I'll make sure it's sorted before end of day.", tone: 'Accountable', tags: ['apology'], popularity: 71 },
-  { category: 'Coworker', subcategory: 'Casual Professional', situation: 'Friendly office chat', incomingMessage: 'Rough day?', reply: "A bit, but almost through it — coffee is doing most of the heavy lifting today.", tone: 'Casual', tags: ['casual'], popularity: 58 },
+  { category: 'Coworker', subcategory: 'Casual Professional', situation: 'Friendly office chat', incomingMessage: 'Rough day?', reply: "A bit, but almost through it — coffee is doing most of the heavy lifting today.", tone: 'Casual', tags: ['casual'], popularity: 58 },,
+
+  // -------- GF / BF MINI-CONVERSATIONS --------
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "Flirt casually",
+    "yourMessage": "You have something on your face.",
+    "theirResponse": "What?",
+    "reply": "Your cuteness.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Make her smile",
+    "yourMessage": "Can I tell you something weird?",
+    "theirResponse": "What?",
+    "reply": "Your name keeps showing up in my thoughts.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "Start flirting",
+    "yourMessage": "I think you have a problem.",
+    "theirResponse": "What problem?",
+    "reply": "You're becoming way too attractive.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Compliment indirectly",
+    "yourMessage": "Do you know what looks good on you?",
+    "theirResponse": "What?",
+    "reply": "Literally everything.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "Make her curious",
+    "yourMessage": "I just realized something about you.",
+    "theirResponse": "What?",
+    "reply": "You're dangerously easy to like.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "Cute tease",
+    "yourMessage": "Stop doing that.",
+    "theirResponse": "Doing what?",
+    "reply": "Being this cute. I'm trying to concentrate.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "Make her blush",
+    "yourMessage": "I have a question.",
+    "theirResponse": "Ask.",
+    "reply": "How do you look this good without even trying?",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "When she says Really",
+    "yourMessage": "You're actually pretty special.",
+    "theirResponse": "Really?",
+    "reply": "Unfortunately for me, yes. Now I can't stop liking you.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "Playful challenge",
+    "yourMessage": "I bet you can't make me smile.",
+    "theirResponse": "Why?",
+    "reply": "Because you already made me smile just by texting.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "When she's bored",
+    "yourMessage": "Want to know how to fix your boredom?",
+    "theirResponse": "How?",
+    "reply": "Give me your attention for five minutes.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Make her curious",
+    "yourMessage": "Guess what I like most about you.",
+    "theirResponse": "What?",
+    "reply": "The fact that I keep finding new things to like.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "Romantic tease",
+    "yourMessage": "I think I know your biggest weakness.",
+    "theirResponse": "What?",
+    "reply": "Me.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "Ask for a photo",
+    "yourMessage": "Send me a picture.",
+    "theirResponse": "Why?",
+    "reply": "I need proof that my favorite person is actually this cute.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "When she says I'm ugly",
+    "yourMessage": "Who told you that?",
+    "theirResponse": "Nobody.",
+    "reply": "Good. Because I was about to have a serious conversation with them.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she says I look bad",
+    "yourMessage": "Bad?",
+    "theirResponse": "Yeah.",
+    "reply": "Then my definition of beautiful is definitely broken.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Make her feel special",
+    "yourMessage": "You know what I like about talking to you?",
+    "theirResponse": "What?",
+    "reply": "I never want the conversation to end.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Late-night flirting",
+    "yourMessage": "Are you still awake?",
+    "theirResponse": "Yes, why?",
+    "reply": "Because apparently my favorite person isn't letting me sleep either.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "When she asks what you're doing",
+    "yourMessage": "Guess what I'm doing.",
+    "theirResponse": "What?",
+    "reply": "Thinking about you. Again.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "Playful accusation",
+    "yourMessage": "I need to report you.",
+    "theirResponse": "For what?",
+    "reply": "For stealing my attention all day.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she asks if you miss her",
+    "yourMessage": "Want the honest answer?",
+    "theirResponse": "Yes.",
+    "reply": "More than I want to admit.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "Make her blush",
+    "yourMessage": "Don't smile.",
+    "theirResponse": "Why?",
+    "reply": "Because I already like you enough.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "Cute compliment",
+    "yourMessage": "I figured out why you're so cute.",
+    "theirResponse": "Why?",
+    "reply": "Because the universe clearly wanted to spoil me.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "What do you like about me",
+    "yourMessage": "I figured out what I like most about you.",
+    "theirResponse": "What?",
+    "reply": "How much time do you have? The list is getting long.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Tell her how she affects you",
+    "yourMessage": "I shouldn't tell you this.",
+    "theirResponse": "Tell me what?",
+    "reply": "You make my day better without even trying.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "After she compliments you",
+    "yourMessage": "You're making me blush.",
+    "theirResponse": "Really?",
+    "reply": "Yeah. But I think you enjoy doing that.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Playful",
+    "situation": "When she says I love you",
+    "yourMessage": "I love you too.",
+    "theirResponse": "Really?",
+    "reply": "Obviously. Did you think I was going to let you win that easily?",
+    "tone": "Playful",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "When she says you're sweet",
+    "yourMessage": "You're sweet.",
+    "theirResponse": "Only with you.",
+    "reply": "Why? You bring out that side of me.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "When she says you're annoying",
+    "yourMessage": "You're annoying.",
+    "theirResponse": "But you still talk to me.",
+    "reply": "So I'm your favorite annoying person.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "When she's angry",
+    "yourMessage": "I'm angry.",
+    "theirResponse": "Should I be scared?",
+    "reply": "Okay, but can I apologize before I get arrested?",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Make up after a small argument",
+    "yourMessage": "Are we still fighting?",
+    "theirResponse": "Maybe.",
+    "reply": "I don't like this version of us. Come back.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "When she's sleepy",
+    "yourMessage": "I'm sleepy.",
+    "theirResponse": "Then go sleep.",
+    "reply": "Wait… I wasn't ready to stop talking to you.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "Good night flirting",
+    "yourMessage": "Good night.",
+    "theirResponse": "That's it?",
+    "reply": "Okay fine… good night, beautiful. Dream about me.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "Good morning",
+    "yourMessage": "Good morning ❤️",
+    "theirResponse": "Did you sleep well?",
+    "reply": "Yeah, but waking up to your message made it better.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she asks where you are",
+    "yourMessage": "Where are you?",
+    "theirResponse": "Guess.",
+    "reply": "Somewhere wishing you were here.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "When she asks who you love",
+    "yourMessage": "Who do you love?",
+    "theirResponse": "Someone annoying.",
+    "reply": "You. Obviously.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she says you forgot her",
+    "yourMessage": "You forgot me.",
+    "theirResponse": "You didn't text.",
+    "reply": "Not texting you and forgetting you are two completely different things.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she says you're busy",
+    "yourMessage": "You're busy.",
+    "theirResponse": "Maybe I am.",
+    "reply": "But never too busy for you.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "Ask for attention",
+    "yourMessage": "I need something from you.",
+    "theirResponse": "What?",
+    "reply": "Five minutes of your undivided attention.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "When she sends a selfie",
+    "yourMessage": "Okay, that's unfair.",
+    "theirResponse": "What?",
+    "reply": "How am I supposed to focus after seeing that?",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she asks how she looks",
+    "yourMessage": "How do I look?",
+    "theirResponse": "Honestly?",
+    "reply": "Like someone I could stare at for way too long.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "Make her laugh",
+    "yourMessage": "I have bad news.",
+    "theirResponse": "What happened?",
+    "reply": "I think I'm addicted to talking to you.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "When she says nothing",
+    "yourMessage": "Nothing.",
+    "theirResponse": "Yeah.",
+    "reply": "Then let me become something interesting.",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she says tell me something",
+    "yourMessage": "Tell me something.",
+    "theirResponse": "Okay.",
+    "reply": "I like you. That's the something.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she asks why me",
+    "yourMessage": "Why me?",
+    "theirResponse": "I don't know.",
+    "reply": "My heart apparently made the decision before my brain got a vote.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Flirty",
+    "situation": "When she catches you staring",
+    "yourMessage": "You're staring.",
+    "theirResponse": "Am I?",
+    "reply": "Can you blame me?",
+    "tone": "Flirty",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Funny",
+    "situation": "When she says stop flirting",
+    "yourMessage": "Stop flirting.",
+    "theirResponse": "Okay.",
+    "reply": "No. I just wanted to see if you'd believe me.",
+    "tone": "Funny",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "When she asks if she looks cute",
+    "yourMessage": "Do I look cute?",
+    "theirResponse": "Cute?",
+    "reply": "That's an understatement.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "When she's cold",
+    "yourMessage": "I'm cold.",
+    "theirResponse": "Wear something warm.",
+    "reply": "Then I guess you need a hug.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Cute",
+    "situation": "When she wishes you were there",
+    "yourMessage": "I wish you were here.",
+    "theirResponse": "Same.",
+    "reply": "Yeah. I'd probably be smiling like an idiot right now.",
+    "tone": "Cute",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  },
+  {
+    "category": "GF / BF",
+    "subcategory": "Romantic",
+    "situation": "End the conversation romantically",
+    "yourMessage": "Before you go…",
+    "theirResponse": "What?",
+    "reply": "Just wanted to remind you that you're my favorite notification.",
+    "tone": "Romantic",
+    "tags": [
+      "conversation",
+      "gf-bf"
+    ],
+    "featured": false,
+    "popularity": 70
+  }
 ];
 
 export const REPLIES = RAW.map((item, index) => ({
