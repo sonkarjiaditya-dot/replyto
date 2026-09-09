@@ -11,6 +11,7 @@ import Interviewer from './pages/Interviewer';
 import Client from './pages/Client';
 import Coworker from './pages/Coworker';
 import NotFound from './pages/NotFound';
+import Search from './pages/Search';
 
 import AdminLayout from './pages/admin/AdminLayout';
 import Dashboard from './pages/admin/Dashboard';
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+  <Route path="/search" element={<Search />} />
       <Route path="/gf-bf" element={<GfBf />} />
       <Route path="/crush-flirting" element={<CrushFlirting />} />
       <Route path="/crazy-flirting" element={<CrazyFlirting />} />
