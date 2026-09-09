@@ -5,14 +5,14 @@ import ReplyCard from '../components/ReplyCard';
 
 const STOP_WORDS = new Set([
   'what', 'are', 'is', 'the', 'a', 'an', 'you', 'your', 'to',
-  'do', 'doing', 'does', 'did', 'i', 'me', 'my', 'we', 'they',
+  'do', 'does', 'did', 'i', 'me', 'my', 'we', 'they',
   'he', 'she', 'it', 'and', 'or', 'of', 'for', 'in', 'on',
   'at', 'with', 'right', 'now'
 ]);
 
 const RELATED_WORDS = {
   doing: ['busy', 'up', 'activity', 'work'],
-  busy: ['doing', 'work', 'free'],
+  busy: ['work', 'free'],
   love: ['romantic', 'relationship', 'girlfriend', 'boyfriend', 'crush'],
   angry: ['mad', 'upset', 'annoyed'],
   thanks: ['thank', 'welcome', 'appreciate'],
